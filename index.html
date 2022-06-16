@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sort visualizer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+<div class="container is-height100">
+  <div class="is-flex is-flex-direction-column p-6 is-height100">
+    <div class="columns is-align-items-center">
+      <div class="column is-fit">
+        <label for="size">Array size</label>
+      </div>
+      <div class="column is-6em">
+        <input class="input" type="number" id="size" min="10" max="150" value="20">
+      </div>
+      <div class="column is-fit">
+        <label for="min">Min value</label>
+      </div>
+      <div class="column is-6em">
+        <input class="input" type="number" id="min" min="1" max="100" readonly value="1">
+      </div>
+      <div class="column is-fit">
+        <label for="max">Max value</label>
+      </div>
+      <div class="column is-6em">
+        <input class="input" type="number" id="max" min="1" max="100" readonly value="100">
+      </div>
+      <div class="column is-fit">
+        <button class="button is-primary" id="randomButton">Random array</button>
+      </div>
+      <div class="column" id="initial-array">
+      </div>
+    </div>
+    <div class="is-height100 is-flex is-justify-content-center is-align-items-end py-5" id="bars">
+    </div>
+    <div class="columns is-align-items-center is-justify-content-center">
+      <div class="column is-fit">
+        <label for="algorithms">Sort algorithm</label>
+      </div>
+      <div class="column is-fit">
+        <div class="select">
+          <select id="algorithms">
+          </select>
+        </div>
+      </div>
+      <div class="column is-fit">
+        <label for="delay">Iteration delay (ms)</label>
+      </div>
+      <div class="column is-6em">
+        <input class="input" type="number" id="delay" min="0" max="1000" value="50">
+      </div>
+      <div class="column is-fit">
+        <button class="button is-primary" id="sortButton">Sort array</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="public/script.js"></script>
+</body>
+</html>

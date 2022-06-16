@@ -1,0 +1,39 @@
+.is-fit {
+  max-width: fit-content;
+}
+
+.is-6em {
+  max-width: 6em;
+}
+
+.is-height100 {
+  height: 100%;
+}
+
+.is-nowrap {
+  white-space: nowrap;
+}
+
+.is-overflow-scroll-x {
+  overflow-x: scroll;
+}
+
+#initial-array {
+  max-height: 3em;
+  overflow-y: scroll;
+}
+
+body {
+  height: 100vh;
+}
+
+#bars {
+  gap: var(--gap);
+
+  > * {
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    border-radius: 1em;
+  }
+}
